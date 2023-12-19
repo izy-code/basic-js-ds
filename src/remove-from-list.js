@@ -24,7 +24,7 @@ function removeKFromList(linkedList, k) {
   let currentNode = linkedList;
   let prevNode = null;
  
-  while (currentNode !== null) {
+  while (currentNode) {
     if (currentNode.value === k) {
       if (prevNode) {
         prevNode.next = currentNode.next;
